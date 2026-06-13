@@ -2,10 +2,10 @@
     "default": "en",
     "languages": {
         "en": {
-            "flag": "https://flagcdn.com/w20/us.png"
+            "flag": "https://flagcdn.com/w20/gb.png"
         },
-        "es": {
-            "flag": "https://flagcdn.com/w20/es.png"
+        "tr": {
+            "flag": "https://flagcdn.com/w20/tr.png"
         }
     }
 }

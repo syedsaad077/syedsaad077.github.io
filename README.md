@@ -1,31 +1,31 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io"><img src="assets/img/logo.png" alt="Academic Portfolio" width="200"></a>
+  <a href="https://github.com/syedsaad077/syedsaad077.github.io"><img src="assets/img/logo.png" alt="Syed Saad Hasan Portfolio" width="200"></a>
   <br>
-  Academic Portfolio
+  Syed Saad Hasan - Portfolio
   <br>
 </h1>
 
-<h4 align="center">An awesome academic portfolio template for GitHub Pages!</h4>
+<h4 align="center">My academic and professional portfolio website!</h4>
 
 <p align="center">
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/NicolasMeseguer/nicolasmeseguer.github.io" alt="Contributors">
+  <a href="https://github.com/syedsaad077/syedsaad077.github.io/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/syedsaad077/syedsaad077.github.io" alt="Contributors">
   </a>
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/members">
-    <img src="https://img.shields.io/github/forks/NicolasMeseguer/nicolasmeseguer.github.io?style" alt="Forks">
+  <a href="https://github.com/syedsaad077/syedsaad077.github.io/network/members">
+    <img src="https://img.shields.io/github/forks/syedsaad077/syedsaad077.github.io?style" alt="Forks">
   </a>
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/stargazers">
-    <img src="https://img.shields.io/github/stars/NicolasMeseguer/nicolasmeseguer.github.io?style" alt="Stars">
+  <a href="https://github.com/syedsaad077/syedsaad077.github.io/stargazers">
+    <img src="https://img.shields.io/github/stars/syedsaad077/syedsaad077.github.io?style" alt="Stars">
   </a>
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues">
-    <img src="https://img.shields.io/github/issues/NicolasMeseguer/nicolasmeseguer.github.io" alt="Issues">
+  <a href="https://github.com/syedsaad077/syedsaad077.github.io/issues">
+    <img src="https://img.shields.io/github/issues/syedsaad077/syedsaad077.github.io" alt="Issues">
   </a>
   <a href="http://creativecommons.org/licenses/by-sa/4.0/">
-    <img src="https://img.shields.io/github/license/NicolasMeseguer/nicolasmeseguer.github.io" alt="License">
+    <img src="https://img.shields.io/github/license/syedsaad077/syedsaad077.github.io" alt="License">
   </a>
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/releases">
-    <img src="https://img.shields.io/github/v/release/NicolasMeseguer/nicolasmeseguer.github.io" alt="Version">
+  <a href="https://github.com/syedsaad077/syedsaad077.github.io/releases">
+    <img src="https://img.shields.io/github/v/release/syedsaad077/syedsaad077.github.io" alt="Version">
   </a>
 </p>
 
@@ -36,9 +36,9 @@
 </p>
 
 <p align="center">
-  <a href="https://nicolasmeseguer.github.io/">View Demo</a> •
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=bug&template=_bug-report.md">Report Bug</a> •
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=enhancement&template=_feature-request.md">Request Feature</a>
+  <a href="https://syedsaad077.github.io/">View Demo</a> •
+  <a href="https://github.com/syedsaad077/syedsaad077.github.io/issues/new?labels=bug&template=_bug-report.md">Report Bug</a> •
+  <a href="https://github.com/syedsaad077/syedsaad077.github.io/issues/new?labels=enhancement&template=_feature-request.md">Request Feature</a>
 </p>
 
 <p align="center">
@@ -62,7 +62,7 @@
 
 ## How To Use
 
-1. Fork this repository [here](https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/fork).
+1. Fork this repository [here](https://github.com/syedsaad077/syedsaad077.github.io/fork).
 2. Go to the settings of your forked repository and rename it to `yourusername.github.io`.
 3. Create a new branch called `gh-pages`.
 4. Go to the settings of your repository and enable GitHub Pages.
@@ -171,10 +171,10 @@ Additionally, if you would like to hide a section, you can do so by adding the `
 
 ## Contributing
 
-Feel free to contribute to this project. You can do so by forking the project and submitting a pull request. Find a list of issues/TODOs in the [issues tab](https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues). Suggestions or feedback are well received.
+Feel free to contribute to this project. You can do so by forking the project and submitting a pull request. Find a list of issues/TODOs in the [issues tab](https://github.com/syedsaad077/syedsaad077.github.io/issues). Suggestions or feedback are well received.
 
 ## License
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
-[nicolasmeseguer.github.io](https://github.com/NicolasMeseguer/nicolasmeseguer.github.io) © 2023 by [Nicolas Meseguer](https://github.com/NicolasMeseguer) is licensed under [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+This portfolio is based on the academic portfolio template by [Nicolas Meseguer](https://github.com/NicolasMeseguer), licensed under [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). Modified and customized by [Syed Saad Hasan](https://github.com/syedsaad077).

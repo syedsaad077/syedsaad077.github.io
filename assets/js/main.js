@@ -9,11 +9,10 @@ $(document).ready(function(){
 	$('#blogContent').hide();
 	$('#academicContent').hide();
 	$('#particularContent').hide();
+	$('#contactContent').hide();
 	// $('#photosContent').hide();
 
-	// Options menu is hidden by default
-	$('#theme').hide();
-	$('#lan').hide();
+	// Theme selector button is always visible
 
 	// Handle 'About Me' content
 	$('#aboutme').click(function(e) {
@@ -29,6 +28,9 @@ $(document).ready(function(){
 
 			// Show current content
 			activateDiv('#aboutmeContent');
+
+			// Animate skill bars
+			animateSkillBars();
 		}
 
 	});
@@ -169,6 +171,23 @@ $(document).ready(function(){
 		}
 	});
 
+	// Handle 'Contact' content
+	$('#contact').click(function(e) {
+
+		// If the div has already the class active, no need to reload the divs...
+		if(!$(e.target).hasClass('active')) {
+			// Update navbar
+			clearActiveLinks();
+			activateLink(e);
+
+			// Hide other contents
+			clearActiveDivs();
+
+			// Show current content
+			activateDiv('#contactContent');
+		}
+	});
+
 
 	// Handle 'Photos' content
 	// $('#photos').click(function(e) {
@@ -215,11 +234,9 @@ $(document).ready(function(){
 	// Omit this part if you don't have more content
 	// *************************** //
 	
-	// If the user has not selected a theme, then select the default one according to the user's preferences
+	// If the user has not selected a theme, then default to light
 	if(localStorage.getItem("theme") === null){
 		localStorage.theme = "light";
-		if (window.matchMedia('(prefers-color-scheme: dark)').matches)
-			localStorage.theme = "dark";
 	}
 
 	// Always load the light theme
@@ -237,27 +254,15 @@ $(document).ready(function(){
 			rel: 'stylesheet',
 			href: 'assets/css/dark.css'
 		});
-		$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
+		$('#theme').empty().append("<i class='fa-solid fa-sun'></i>");
+	} else {
+		$('#theme').empty().append("<i class='fa-solid fa-moon'></i>");
 	}
-
-	// Controls the option menu toggler to show/hide the language and theme selectors
-	$('#options-toggler').click(function(e) {
-		if(!$(e.currentTarget).hasClass('active')) {
-			$(e.currentTarget).addClass('active');
-			$('#theme').show("fast");
-			$('#lan').show("fast");
-		}
-		else {
-			$(e.currentTarget).removeClass('active');
-			$('#theme').hide("fast");
-			$('#lan').hide("fast");
-		}
-	})
 
 	// Alternates between light and dark themes
 	$('#theme').click(function(e) {
 		if(localStorage.theme != "dark"){
-			$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
+			$('#theme').empty().append("<i class='fa-solid fa-sun'></i>");
 
 			localStorage.theme = "dark"
 			
@@ -269,7 +274,7 @@ $(document).ready(function(){
 			});
 		}
 		else {
-			$('#theme').empty().append("<i class='fa-duotone fa-lightbulb'></i>");
+			$('#theme').empty().append("<i class='fa-solid fa-moon'></i>");
 
 			localStorage.theme = "light"
 			
@@ -281,16 +286,6 @@ $(document).ready(function(){
 			});
 		}
 	})
-
-	
-	// Create the language manager
-	const langManager = new LanguageManager();
-	
-	// Alternates between the different available languages
-	$('#lan').click(function() {
-        const newLang = langManager.getNextLanguage();
-        langManager.setLanguage(newLang);
-    });
 });
 
 // Clears the active links
@@ -317,6 +312,16 @@ function activateLink(e) {
 		$('#leftPanel').hide();
 	else
 		$('#leftPanel').show();
+
+	// Collapse mobile navbar menu on select
+	var navCollapse = document.getElementById('collapsingNavbar3');
+	if (navCollapse && navCollapse.classList.contains('show')) {
+		var bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+		if (!bsCollapse) {
+			bsCollapse = new bootstrap.Collapse(navCollapse, { toggle: false });
+		}
+		bsCollapse.hide();
+	}
 }
 
 // Activates the div
@@ -336,3 +341,17 @@ function scrollToContent(divId) {
 		}, 1);
 	}
 }
+
+// Animates the skill progress bars
+function animateSkillBars() {
+	$('.skill-bar-fill').each(function() {
+		var targetWidth = $(this).data('width') + '%';
+		$(this).css('width', '0');
+		$(this).animate({width: targetWidth}, 1200);
+	});
+}
+
+// Trigger skill bars on initial load (about me is default active)
+$(window).on('load', function() {
+	setTimeout(animateSkillBars, 300);
+});

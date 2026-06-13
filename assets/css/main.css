@@ -53,7 +53,7 @@ li > .active {
 	font-family: 'Lucida Console', monospace;
 }
 
-/* NICOLAS MESEGUER CONTACT INFO - Related*/
+/* SYED SAAD HASAN CONTACT INFO - Related*/
 .profilepicture {
 	max-height: 300px;
 	min-width: 150px;
@@ -152,38 +152,12 @@ li > .active {
 	z-index: -999;
 }
 
-#options-toggler {
-	transition: .2s;
-}
-
-#options-toggler:hover {
-	transform: scale(1.09,1.09);
-}
-
 #theme {
-	height: 40px;
-    width: 40px;
-
-	bottom: 85px !important;
-	right: 30px !important;
-
-	font-size: 1em;
-
-	-webkit-transition: background-color .5s; /* For Safari 3.0 to 6.0 */
-    transition: background-color .5s; /* For modern browsers */
+	transition: background-color .5s, transform .2s;
 }
 
-#lan {
-	height: 40px;
-    width: 40px;
-
-	bottom: 130px;
-	right: 30px;
-
-	font-size: 1em;
-
-	-webkit-transition: background-color .5s; /* For Safari 3.0 to 6.0 */
-    transition: background-color .5s; /* For modern browsers */
+#theme:hover {
+	transform: scale(1.09,1.09);
 }
 
 .lang-flag {
@@ -265,4 +239,171 @@ li > .active {
 	.abme-honors-bullet{
 		margin-left: 40px;
 	}
+}
+
+/* ===== TYPING ANIMATION ===== */
+.typing-text {
+	border-right: 2px solid;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+	max-width: 100%;
+}
+
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: currentColor }
+}
+
+/* ===== SKILL PROGRESS BARS ===== */
+.skill-bar-wrapper {
+	margin-bottom: 14px;
+}
+
+.skill-bar-label {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.9rem;
+	margin-bottom: 5px;
+}
+
+.skill-bar {
+	height: 8px;
+	border-radius: 100px;
+	background: rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+
+.skill-bar-fill {
+	height: 100%;
+	border-radius: 100px;
+	background: linear-gradient(90deg, #0d6efd, #6610f2);
+	width: 0;
+	transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-bar-fill.cyber {
+	background: linear-gradient(90deg, #198754, #20c997);
+}
+
+/* ===== CYBERSECURITY BADGE ===== */
+.cyber-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: linear-gradient(135deg, #0d1b2a, #1a3a4c);
+	color: #20c997;
+	padding: 6px 14px;
+	border-radius: 100px;
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	border: 1px solid #20c99733;
+	box-shadow: 0 2px 12px rgba(32,201,151,0.15);
+	margin-top: 8px;
+	margin-bottom: 4px;
+}
+
+.cyber-badge i {
+	color: #20c997;
+}
+
+/* ===== PROJECT CARDS ===== */
+.project-card {
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 12px;
+	padding: 20px;
+	margin-bottom: 20px;
+	transition: all 0.25s ease;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.project-card:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+	border-color: #0d6efd55;
+}
+
+.project-card h2 {
+	font-size: 1.2rem;
+	margin-bottom: 8px;
+}
+
+.project-tag {
+	display: inline-block;
+	background: rgba(13,110,253,0.1);
+	color: #0d6efd;
+	padding: 2px 10px;
+	border-radius: 100px;
+	font-size: 0.75rem;
+	font-weight: 600;
+	margin: 2px;
+}
+
+.project-tag.tag-security {
+	background: rgba(25,135,84,0.1);
+	color: #198754;
+}
+
+.project-tag.tag-ai {
+	background: rgba(111,66,193,0.1);
+	color: #6f42c1;
+}
+
+.project-tag.tag-java {
+	background: rgba(220,53,69,0.1);
+	color: #dc3545;
+}
+
+.thumbnail img {
+	max-height: 130px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.project-card h2 a {
+	color: inherit;
+	transition: color 0.2s ease;
+}
+
+.project-card h2 a:hover {
+	color: #0d6efd !important;
+}
+
+.project-card img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 8px;
+	transition: transform 0.25s ease;
+}
+
+.project-card:hover img {
+	transform: scale(1.03);
+}
+
+/* Contact Icon Colors */
+.contact-icon-location {
+	color: #e03d3d;
+}
+
+.contact-icon-email {
+	color: #ea4335;
+}
+
+.contact-icon-linkedin {
+	color: #0a66c2;
+}
+
+.contact-icon-github {
+	color: #24292f;
+}
+
+.contact-icon-phone {
+	color: #25d366;
 }
