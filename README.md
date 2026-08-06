@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">My personal academic and professional portfolio website 🚀</h4>
+<h4 align="center">My personal academic and professional portfolio website 🚀.</h4>
 
 <p align="center">
   <a href="https://github.com/syedsaad077/SyedSaadHasan.github.io/stargazers">
