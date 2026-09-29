@@ -36,9 +36,9 @@
 
 ## 👤 About Me
 
-Hi! I'm **Syed Saad Hasan**, an AI Products and Backend Developer based in New Delhi, India. I'm currently pursuing a B.Tech in Computer Science and Engineering at Jamia Hamdard (graduating 2026) and am actively seeking admission to an M.Sc. in Cybersecurity.
+Hi! I'm **Syed Saad Hasan**, a **Cybersecurity & Automation Specialist** based in New Delhi, India. I completed my B.Tech in Computer Science and Engineering at Jamia Hamdard (2026) and specialize in network security, security automation, AI workflow automation, and secure API integration.
 
-I have hands-on experience building AI agents, automated pipelines, and backend microservices. My academic excellence was recognized by the U.S. Embassy in New Delhi through the prestigious English Access Microscholarship Program.
+I have hands-on experience building AI automation agents, security scanning pipelines, and backend microservices. My academic excellence was recognized by the U.S. Embassy in New Delhi through the prestigious English Access Microscholarship Program.
 
 ---
 
@@ -50,7 +50,7 @@ I have hands-on experience building AI agents, automated pipelines, and backend 
 - 🌍 **Multi-Language** — Supports English and Turkish (easily extendable)
 - ⚡ **Blazingly Fast** — Lightweight, no heavy frameworks
 - 🎨 **Customizable** — Easy to personalize colors, content, and sections
-- 🛡️ **Cybersecurity Focus** — Reflects my passion for security and AI
+- 🛡️ **Cybersecurity & Automation Focus** — Highlights my expertise in network security, AI automation, and DevSecOps workflow automation
 
 ---
 

@@ -291,7 +291,7 @@ li > .active {
 	background: linear-gradient(90deg, #198754, #20c997);
 }
 
-/* ===== CYBERSECURITY BADGE ===== */
+/* ===== CYBERSECURITY & AUTOMATION BADGES ===== */
 .cyber-badge {
 	display: inline-flex;
 	align-items: center;
@@ -311,6 +311,17 @@ li > .active {
 
 .cyber-badge i {
 	color: #20c997;
+}
+
+.automation-badge {
+	background: linear-gradient(135deg, #0f2027, #203a43);
+	color: #0dcaf0;
+	border: 1px solid rgba(13, 202, 240, 0.3);
+	box-shadow: 0 2px 12px rgba(13, 202, 240, 0.15);
+}
+
+.automation-badge i {
+	color: #0dcaf0;
 }
 
 /* ===== PROJECT CARDS ===== */
@@ -348,6 +359,12 @@ li > .active {
 .project-tag.tag-security {
 	background: rgba(25,135,84,0.1);
 	color: #198754;
+}
+
+.project-tag.tag-automation {
+	background: rgba(13, 202, 240, 0.12);
+	color: #0bacce;
+	border: 1px solid rgba(13, 202, 240, 0.25);
 }
 
 .project-tag.tag-ai {
